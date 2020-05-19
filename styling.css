@@ -1,208 +1,109 @@
 /*styling.css*/
-@font-face
-{
-    font-family:EcentricDEMO;
-    src:url("Ecentric DEMO.ttf");
-}
-@font-face
-{
-    font-family:Square;
-    src:url("Square.tff");
-}
-body{
-    font: Arial, Helvetica, sans-serif;
+/*Add a cover background picture for the featured part with a fixed height*/
+.jumbotron{
+    background: url(images/bg.jpg);
+    background-size: 100% 100%;
+    height: 600px;
 }
 
-#container {
-    width: 1050px;
-/*    border: 1px solid grey;*/
-    margin: 0 auto;
-}
-
-#header{
+/*set the size of the logo*/
+.logo{
+    width: 100px;
     height: 100px;
-    padding: 10px 0;
+    float: left;
 }
 
-#brand{
-    float: left;   
+/*set text color of featured content*/
+.featured{
+    color: white; 
+    font-size: 1.5em;
 }
 
-h1 a{
-    font-size: 50px; 
-    font-weight: 100;
-    color: #861BBF;
-    text-decoration: none;
-    font-family: Square;
-    text-decoration:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp underline;
+/*create space between the title and the logo*/
+.featured h1{
+    padding-top: 60px;   
 }
 
-#searchBox{
-    float: right;
-    background: linear-gradient(#E4F2B9, #B7E953);
-    background: -webkit-linear-gradient(#E4F2B9, #B7E953);
-    background: -o-linear-gradient(#E4F2B9, #B7E953);
-    background: -moz-linear-gradient(#E4F2B9, #B7E953);
-    width: 400px;
-    height: 50px;
-    padding: 20px 20px 0 20px;
-    margin-top: 20px;
-}
-
-.text{
-    float: left; 
-    width: 200px;
-    padding: 5px;
-    font-size: 15px;
-    color: #E36A0C;
-    background: white url(images/search.png) right center no-repeat;
-    border: 1px solid #C8D03E;
-}
-
-.submit{
-    float: right;
-    padding: 5px;
+/*style links*/
+.featured .btn-default{
     font-weight: bold;
     color: white;
-    background: #A751D6;
-    font-size: 15px;
-    border: 1px solid #DCD5E1;
+    background-color: rgba(145, 82, 58, 0.5);
+    border-radius: 10px;
+    margin-top: 20px;
+    width: auto;;
+    margin-right: 15px;
 }
 
-.clear{
-    clear: both;   
+
+.featured .btn-default:hover{
+    background-color: rgb(145, 82, 58); 
+    width:auto;
 }
 
-#menu{
+/*center align elements in the trial section and add padding*/
+.trial{
+    text-align: center;
+    padding: 20px 0 40px 0;
+    color: black;
+}
+
+/*set size of images and add space between them*/
+.trial img{
+    width: 200px;
     height: 70px;
-    background: linear-gradient(#F8F594, #D5D533);
-    background: -webkit-linear-gradient(#F8F594, #D5D533);
-    background: -o-linear-gradient(#F8F594, #D5D533);
-    background: -moz-linear-gradient(#F8F594, #D5D533);
-    padding: 7px 0;
-}
-ul{
-    list-style: none;   
+    margin: 20px;
 }
 
-#menu ul li{
-    float: left;
-    padding: 0 30px;
-    height: 30px;
-    border-right: 1px solid #5d12e7;
-}
-
-#menu ul li:last-child{
-    border-right: none;   
-}
-
-#menu ul li a{
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 17px;
-    color: #5d12e7;
-    line-height: 30px;
-    -webkit-transition: font-size 0.3s ease;
-    -moz-transition: font-size 0.3s ease;
-    -o-transition: font-size 0.3s ease;
-    -ms-transition: font-size 0.3s ease;
-    transition: font-size 0.3s ease;
-}
-
-#menu ul li a:hover, #menu ul li a.active{
-    font-size: 20px;
-    font-weight: bold;
-    color: #B314DB;
-}
-
-#introduction{
-    background: linear-gradient(#E5F2BB, #B7E952); 
-    background: -webkit-linear-gradient(#E5F2BB, #B7E952); 
-    background: -o-linear-gradient(#E5F2BB, #B7E952); 
-    background: -moz-linear-gradient(#E5F2BB, #B7E952); 
-    padding: 30px;
-    margin: 16px 0;
-}
-
-#introduction h3{
-    font-size: 45px;
-    color: #316901;
-    font-weight: normal;
-}
-
-#introduction p{
-    font-size: 25px; 
-    color: #628F19;
-    text-align: justify;
-}
-
-.sidebar{
-    height: 500px;
-    width: 450px;
-    border: 1px solid #BAF46F;
-    border-radius: 20px;
-    padding: 10px 30px;
-}
-
-.sidebar h3{
-    color: #B314DB;
-    font-size: 30px;
-}
-
-.sidebar ul{
-    padding-top: 8px;   
-}
-#leftsidebar ul li{
-    padding: 6px 0 6px 12px;
-    list-style-image: url(arrow.png);
-}
-
-#rightsidebar ul li{
-    padding: 17px 0 17px 70px;
-    background: url(tick.png) no-repeat left center;
-}
-.sidebar ul li a{
-    text-decoration: none;
-    font-size: 20px;
-    color: #5d12e7;
-    -webkit-transition: font-size 0.3s ease;
-    -moz-transition: font-size 0.3s ease;
-    -o-transition: font-size 0.3s ease;
-    -ms-transition: font-size 0.3s ease;
-    transition: font-size 0.3s ease;
-}
-
-.sidebar ul li a:hover, .sidebar ul li a.active{
-    text-decoration: none;
-    color: #B314DB;
-    font-size: 23px;
-    font-weight: bold;
-}
-
-
-#leftsidebar{
-    float: left;   
-}
-
-#rightsidebar{
-    float: right;
-}
-
+/*style footer*/
 .footer{
-    height: 60px;
-    background: linear-gradient(#F6F390, #D5D533);
-    background: -webkit-linear-gradient(#F6F390, #D5D533);
-    background: -o-linear-gradient(#F6F390, #D5D533);
-    background: -moz-linear-gradient(#F6F390, #D5D533);
-    padding: 10px 30px;
-    margin-top: 15px
+    background-color: #eee;
+    font-size: 15px;
+    padding: 10px 0;
 }
-#logo{
-    height: 70px;
-    float: right;
+/*Add styling for devices between 480px and 768px*/
+@media (min-width: 480px) and (max-width: 768px){
+    .jumbotron{
+        height: 410px;
+        margin: 0;
+    }
+    .logo{
+        width: 50px;
+        height: 50px;
+    }
+    .featured h1{
+        padding-top:  30px;  
+    }
+    .featured p{
+        font-size: 30px;   
+    }
+    .featured{
+        text-align: center;
+    }
 }
-#logo2{
-    float: right;
-    margin-right: 20px;
-    margin: 
+
+/*Add styling for devices under 480px*/
+@media (max-width: 480px){
+    .jumbotron{
+        height: 410px;
+        margin: 0;
+    }
+    .logo{
+        width: 40px;
+        height: 40px;
+    }
+    .featured h1{
+        padding-top:  10px;  
+    }
+    .featured p, .featured a{
+        font-size: 30px;   
+    }
+    .featured{
+        text-align: center;
+    }
+    .trial img{
+        width: 100px;
+        height: 35px;
+        margin: 10px;
+    }
 }
